@@ -2,7 +2,7 @@
 <p>
 </p>
 <center>
-    <img src="./logo.png" alt="MODU" style="zoom:76%;" align="center"/>
+    <img src="./readMesrc/logo.png" alt="Firststep" style="zoom:76%;" align="center"/>
 </center>
 <br>
 > First Step / 한걸음 대여소 (신세계 I&C 2nd 모듈 프로젝트)<br>
