@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, request
 import utils.utils as utils
 import pymysql
 import json, datetime
@@ -9,11 +9,10 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 # 데이터 베이스 연결
 def getCon():
-  return pymysql.connect(host="myrds.cxeh18id8uka.us-west-1.rds.amazonaws.com", 
-                     user="admin", password="password", 
+  return pymysql.connect(host="localhost", 
+                     user="root", password="1234", 
                      db="firststep",
                      charset="utf8",
-                     port=3306,
                      cursorclass=pymysql.cursors.DictCursor)
 
 def json_default(value):
@@ -31,7 +30,7 @@ def boardlist() :
     # 반환할 때 json형식으로 반환
     return json.dumps(data, default=json_default)
 
-@app.route('/boardlist/<searchWordKey>/<searchWord>', methods=['GET'])
+@app.route('/boardlist', methods=['GET'])
 def search(searchWordKey:str, searchWord:str) :
 
   con = getCon()
@@ -370,4 +369,4 @@ def boardreturn(boardId:int) :
   return "SUCCESS"
 
 if __name__ == "__main__" :
-    app.run(host="0.0.0.0", debug=False)
+    app.run(debug=True)
