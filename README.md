@@ -13,11 +13,11 @@
 ```
 ## 🤼‍♂️Author
 ```sh
-🐯 **곽민주** : 마이페이지, 게시물 조회/수정/삭제, 게시물 대여/반납
-🐉 **조수아** : 데이터베이스, 게시판, 게시물 대여/반납, 로그인/로그아웃, 회원탈퇴, 비밀번호 변경
-🐺 **김기성** : 로그인
-🐶 **김서연** : 팀장, 회원가입
-🐱 **신명호** : 홈
+🐯 곽민주 : 마이페이지, 게시물 조회/수정/삭제, 게시물 대여/반납
+🐉 조수아 : 데이터베이스, 게시판, 게시물 대여/반납, 로그인/로그아웃, 회원탈퇴, 비밀번호 변경
+🐺 김기성 : 로그인
+🐶 김서연 : 팀장, 회원가입
+🐱 신명호 : 홈
 ```
 
 ## 🔍 기능
@@ -43,12 +43,12 @@
 
 ## Architecture
 <center>
-    <img src="./architecture.png" alt="FIRSTSTEP"/>    
+    <img src="./readMesrc/architecture.png" alt="FIRSTSTEP"/>    
 </center>
 
 ## ✏️DB
 <center>
-    <img src="./db.png" alt="FIRSTSTEP"/>    
+    <img src="./readMesrc/db.png" alt="FIRSTSTEP"/>    
 </center>
 
 ## 🏃 Steps to run
