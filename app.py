@@ -9,8 +9,8 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 # 데이터 베이스 연결
 def getCon():
-  return pymysql.connect(host="myrds.cxeh18id8uka.us-west-1.rds.amazonaws.com", 
-                     user="admin", password="password", 
+  return pymysql.connect(host="localhost", 
+                     user="admin", password="1234", 
                      db="firststep",
                      charset="utf8",
                      port=3306,
