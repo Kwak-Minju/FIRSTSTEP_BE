@@ -10,7 +10,11 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 # 데이터 베이스 연결
 def getCon():
   return pymysql.connect(host="localhost", 
+<<<<<<< HEAD
                      user="root", password="1234", 
+=======
+                     user="admin", password="1234", 
+>>>>>>> feature/token
                      db="firststep",
                      charset="utf8",
                      cursorclass=pymysql.cursors.DictCursor)
