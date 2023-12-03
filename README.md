@@ -90,6 +90,29 @@ axios.put(`http://127.0.0.1:5000/boardEdit/${boardId}`, {title : title, content 
 
 <br>
 
+## 📖 API 명세서
+| Index | Method | URL | Description | Parameters |
+| --- | --- | --- | --- | --- |
+| 1 | GET | /boardlist | 게시판 데이터 조회 |  |
+| 2 | GET | /boardlist/<searchWordKey>/<searchWord> | 게시물 검색 |  |
+| 3 | GET | /board/detail/<boardId>/<token> | 게시물 상세 정보 조회 |  |
+| 4 | GET | /mypage/<token> | 마이페이지 대여 목록 조회 |  |
+| 5 | GET | /mypage/chageName/<token> | 마이페이지 사용자 이름 반환 |  |
+| 6 | PUT | /boardEdit/<boardId> | 게시물 수정 | title : string content : string |
+| 7 | DELETE | /boardDelete/<boardId> | 게시물 삭제 |  |
+| 8 | POST | /boardWrite | 게시물 작성 | title : string location : string content : string userId : int |
+| 9 | GET | /login/<ID>/<password> | 로그인 |  |
+| 10 | GET | /checkid/<token> | 사용자 확인 |  |
+| 11 | POST | /signup | 회원 가입 | ID : string password : string password_confirm : string name : string phoneNumber : string |
+| 12 | DELETE | /signout/<token> | 회원 탈퇴 |  |
+| 13 | POST | /commentWrite | 댓글 작성 | token : string boardId : int content: string |
+| 14 | GET | /boardlist/<boardId>/commentlist | 댓글 조회 |  |
+| 15 | DELETE | /commentdelete/<commentId> | 댓글 삭제 |  |
+| 16 | POST | /checkpassword/<token> | 비밀번호 확인 | constpassword : string |
+| 17 | PUT | /changepassword/<token> | 비밀번호 변경 | newPassword : string |
+| 18 | PUT | /boardrent/<userId> | 대여 | boardId : int returnData : date |
+| 19 | DELETE | /boardreturn/<boardId> | 반납 |  |
+
 ## 🔍 Overview
 ### 1. main 페이지
 <center>
